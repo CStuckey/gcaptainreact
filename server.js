@@ -34,17 +34,17 @@ db.once('open', function() {
 });
 
 // Load HTML page (with ReactJS) in public/index.html
-app.get('/', function(req, res) {
-	res.sendFile('./public/index.html');
+app.get('*', function(req, res){
+	res.sendFile('public/index.html', { root: __dirname });
 });
 
 // Call this route the moment the page gets rendered
 // Components use this link to query MongoDB for all saved articles
-app.get('/api/savedArticle', function(req, res) {
+app.get('/api/savedArticles', function(req, res) {
 	console.log("Score!");
 
 	// Find all the records, sort it in descending order for publish date
-	Article.find{}.sort([['date', 'descending']]).exec(function(err, doc) {
+	Article.find({}).sort([['date', 'descending']]).exec(function(err, doc) {
 		if (err) {
 			console.log(err);
 		}

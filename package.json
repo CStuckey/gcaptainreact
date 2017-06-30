@@ -1,0 +1,24 @@
+{
+  "name": "gcaptainreact",
+  "version": "1.0.0",
+  "description": "Utilize the React mounting lifecycle to query and display articles based on user searches.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CStuckey/gcaptainreact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CStuckey/gcaptainreact/issues"
+  },
+  "homepage": "https://github.com/CStuckey/gcaptainreact#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2"
+  }
+}
