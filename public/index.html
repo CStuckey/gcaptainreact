@@ -8,108 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<!-- JUMBOTRON	 -->
-	<div class="jumbotron">
-	  <div class="container text-center">
-	    <h1>GCaptain Article Scrubber</h1>
-	    <p>Search for and annotate articles of interest</p>      
-	  </div>
-	</div>
-
-<div class="container vertical-center">
-	<div class="row">
-		
-		<!-- SEARCH PANEL -->
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Search</h3>
-		  </div>
-		  <div class="panel-body">
-		    <!-- Panel content -->
-		    <form>
-			  <div class="form-group">
-			    <label for="topic">Topic</label>
-			    <input type="text" class="form-control" id="topic" placeholder="What's your topic?">
-			  </div>
-			  <div class="form-group">
-			    <label for="startYear">Start Year</label>
-			    <input type="number" class="form-control" id="startYear" placeholder="2014">
-			  </div>
-			  <div class="form-group">
-			    <label for="endYear">End Year</label>
-			    <input type="number" class="form-control" id="endYear" placeholder="2017">
-			  </div>
-			  
-			  <button type="submit" class="btn btn-default">Search</button>
-			</form>
-		  </div> <!-- Close Panel content -->
-		</div>
-
-		<!-- RESULTS PANEL -->
-		<div className="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Results</h3>
-		  </div>
-		  <div class="panel-body">
-		  	<!-- Panel Results Panel body content -->
-			<div class="panel panel-default">
-			    <div class="panel-heading">
-			    	<a href="" target="_blank"><h3 class="panel-title pull-left">Text works great!</h3></a>
-					<form action="/saveArticle/" method="POST">
-						<button class="btn btn-primary pull-right">Save</button>
-			        	<div class="clearfix"></div>
-					</form>
-			    </div>
-			</div>
-			<br>	
-
-			<div class="panel panel-default">
-			    <div class="panel-heading">
-			    	<a href="" target="_blank"><h3 class="panel-title pull-left">Text works great!</h3></a>
-					<form action="/saveArticle/" method="POST">
-						<button class="btn btn-primary pull-right">Save</button>
-			        	<div class="clearfix"></div>
-					</form>
-			    </div>
-			</div>
-			<br>		    
-
-		  </div> <!-- Close Results Panel body content --> 
-		</div>
-
-		<!-- SAVED ARTICLES PANEL -->
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Saved Articles</h3>
-		  </div>
-		  <div class="panel-body">
-		    <!-- Panel Saved Body content -->
-
-		    <div class="panel panel-default">
-			    <div class="panel-heading">
-			    	<a href="" target="_blank"><h3 class="panel-title pull-left">Text works great!</h3></a>
-
-			    	<form action="/removeArticle" method="POST">
-			    		<button class="btn btn-danger pull-right">Remove</button>
-			        	<div class="clearfix"></div>
-			    	</form>
-			    </div>
-			    <div class="panel-body">Notes: </div>
-			</div>
-			<br>
-
-		  </div> <!-- Close Saved Panel Body content -->
-		</div>
-
-	</div> <!-- Close row -->
-</div> <!-- Close container -->
-
-<br><br>
 
 <!-- This is where React will deploy the contents it generates -->
   <div id="app"></div>

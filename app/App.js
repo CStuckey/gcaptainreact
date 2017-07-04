@@ -6,4 +6,4 @@ import ReactDOM from "react-dom";
 var Main = require("./components/main");
 
 // This code allows us to render the main component (Main)
-ReactDOM.render(<Main />, document.getElementbyId("app"));
+ReactDOM.render(<main />, document.getElementbyId("app"));
